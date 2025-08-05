@@ -32,5 +32,11 @@
   <div class="pdf-container">
     <iframe src="HandBook-Research-and-Academic-Services-2025.pdf" title="HandBook PDF"></iframe>
   </div>
+  <script>
+    // Redirect to the PDF if not embedded (e.g., on mobile or unsupported browsers)
+    if (window.innerWidth < 600 || /iPhone|iPad|Android|Mobile/i.test(navigator.userAgent)) {
+      window.location.href = 'HandBook-Research-and-Academic-Services-2025.pdf';
+    }
+  </script>
 </body>
 </html>
